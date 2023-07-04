@@ -41,3 +41,42 @@ function dobleClick(parrafo) {
 function eliminar(elemento) {
     elemento.remove();
 }
+
+function cambia_nombre() {
+    //etiqueta
+    //.clase
+    //#id
+    var abc123 = document.querySelector("h1"); //Seleccionando la etiqueta h1
+    abc123.innerText = "Juana de Arco";
+
+    var etiqueta_h2 = document.querySelector(".otro_titulo");
+    etiqueta_h2.style.color = "aqua";
+}
+
+function cambio_clase() {
+    var cuadrado = document.querySelector(".cuadrado");
+    
+    // if(cuadrado.classList.contains('azul')) {
+    //     cuadrado.classList.remove('azul');
+    //     cuadrado.classList.add('amarillo');
+    // } else {
+    //     cuadrado.classList.remove('amarillo');
+    //     cuadrado.classList.add('azul');
+    // }
+
+    cuadrado.classList.toggle('azul');
+    cuadrado.classList.toggle('amarillo');
+
+}
+
+var num_clicks = 0;
+
+function nuevo_click() {
+    num_clicks++; 
+    var span_clicks = document.querySelector("h3 span");
+    span_clicks.innerText = num_clicks;
+}
+
+function cambia_imagen(variable_img) {
+    variable_img.src = "images/gear.png";
+}

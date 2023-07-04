@@ -56,3 +56,16 @@ p {
 button {
     background-color: purple;
 }
+
+.cuadrado {
+    width: 200px;
+    height: 150px;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.amarillo {
+    background-color: yellow;
+}

@@ -12,7 +12,7 @@
 <body>
     <div class="card">
         <div class="card-header">
-            <img src="images/user-circle.png" alt="User">
+            <img ondblclick="cambia_imagen(this)" src="images/user-circle.png" alt="User">
         </div>
         <div class="card-body">
             <h1 onmouseover="sobreNombre(this)" onmouseout="fueraNombre(this)">Cynthia Castillo</h1>
@@ -28,6 +28,14 @@
             <button onmouseover="overButton(this)" onmouseout="outButton(this)">Botón 1</button>
             <button onmouseover="overButton(this)" onmouseout="outButton(this)">Botón 2</button>
             <button onmouseover="overButton(this)" onmouseout="outButton(this)">Botón 3</button>
+            <button onclick="cambia_nombre()">Cambia el nombre</button>
+            <h2 class="otro_titulo">Otro título</h2>
+            <button onclick="cambio_clase()">Cambia de clase</button>
+            <div class="cuadrado azul">
+
+            </div>
+            <h3><span>0</span> clicks</h3>
+            <button onclick="nuevo_click()">Hiciste click</button>
         </div>
     </div>
     <script src="js/script.js"></script>
