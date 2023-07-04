@@ -15,17 +15,21 @@
             <img src="images/user-circle.png" alt="User">
         </div>
         <div class="card-body">
-            <h1>Cynthia Castillo</h1>
+            <h1 onmouseover="sobreNombre(this)" onmouseout="fueraNombre(this)">Cynthia Castillo</h1>
             <h2>
-                <img src="images/map-marker.png" alt="Marcador de Mapa" class="icon"> Monterrey, México
+                <img onclick="eliminar(this)" src="images/map-marker.png" alt="Marcador de Mapa" class="icon"> Monterrey, México
             </h2>
-            <p>
+            <p ondblclick="dobleClick(this)">
                 Profesora de Coding Dojo -      <br>Programadora y amante de los gatitos
             </p>
-            <a href="#">
+            <a href="#" onclick="saluda()">
                 <img src="images/gear.png" alt="Engrane" class="icon"> Editar Perfil
             </a>
+            <button onmouseover="overButton(this)" onmouseout="outButton(this)">Botón 1</button>
+            <button onmouseover="overButton(this)" onmouseout="outButton(this)">Botón 2</button>
+            <button onmouseover="overButton(this)" onmouseout="outButton(this)">Botón 3</button>
         </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
